@@ -1,0 +1,75 @@
+# 🚀 Day 7 – Host a Static Website on AWS EC2 using Apache HTTP Server
+
+## 📌 Project Overview
+In this project, I deployed a static website on an Amazon EC2 instance using the Apache HTTP Server (httpd). The website is accessible over the internet through the EC2 Public IP.
+
+## 🎯 Objective
+- Launch an EC2 instance
+- Install and configure Apache HTTP Server
+- Deploy a static HTML website
+- Configure Security Groups to allow HTTP traffic
+- Access the website using the EC2 Public IP
+
+## 🛠️ AWS Services Used
+- Amazon EC2
+- Security Groups
+- Apache HTTP Server (httpd)
+
+## 📋 Steps Performed
+1. Launched an Amazon Linux 2023 EC2 instance.
+2. Connected to the instance using SSH (PuTTY).
+3. Updated system packages.
+4. Installed Apache HTTP Server.
+5. Started and enabled the Apache service.
+6. Created a custom `index.html` webpage.
+7. Configured the Security Group to allow HTTP (Port 80).
+8. Verified the website using the EC2 Public IP.
+
+## 💻 Commands Used
+
+```bash
+sudo yum update -y
+sudo yum install httpd -y
+sudo systemctl start httpd
+sudo systemctl enable httpd
+sudo systemctl status httpd
+```
+
+## 📄 Sample index.html
+
+```html
+<html>
+<head>
+    <title>My AWS Website</title>
+</head>
+<body>
+    <h1>Hello from AWS EC2!</h1>
+    <p>Created by Vasim Raja</p>
+</body>
+</html>
+```
+
+## 🔐 Security Group Configuration
+
+| Type | Protocol | Port | Source |
+|------|----------|------|--------|
+| HTTP | TCP | 80 | 0.0.0.0/0 |
+
+## ✅ Project Outcome
+- Successfully deployed a static website on AWS EC2.
+- Configured Apache HTTP Server.
+- Allowed public access through Security Groups.
+- Verified the website using the EC2 Public IP.
+
+## 📚 Key Learnings
+- Launching and managing EC2 instances.
+- Installing and configuring Apache HTTP Server.
+- Hosting a static website on AWS.
+- Understanding Security Groups and HTTP traffic.
+- Accessing cloud-hosted applications through a public IP.
+
+## 📸 Project Screenshot
+(Add your project screenshot here.)
+
+## 🏷️ Tags
+#AWS #EC2 #Apache #CloudComputing #StaticWebsite #DevOps #GitHub #100DaysOfCloud
