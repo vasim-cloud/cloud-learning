@@ -1,0 +1,44 @@
+# 🚀 Day 6 – AWS Project 1: EBS & Snapshot
+
+## 📌 Project Overview
+Today I learned how to create and manage Amazon EBS Snapshots for data backup and recovery in AWS.
+
+## 🎯 Objective
+- Understand Amazon EBS (Elastic Block Store)
+- Create an EBS Snapshot
+- Restore a new EBS Volume from a Snapshot
+- Attach the restored volume to an EC2 instance
+
+## 🛠️ AWS Services Used
+- Amazon EC2
+- Amazon EBS
+- Amazon EBS Snapshot
+
+## 📋 Steps Performed
+1. Identified the EBS volume attached to an EC2 instance.
+2. Created an EBS Snapshot.
+3. Waited for the snapshot status to become **Completed**.
+4. Created a new EBS Volume from the Snapshot.
+5. Attached the restored volume to an EC2 instance.
+6. Verified that the backup data was restored successfully.
+
+## 📚 Key Concepts
+- **EBS (Elastic Block Store):** Persistent block storage for EC2 instances.
+- **Snapshot:** Point-in-time backup of an EBS Volume stored by AWS.
+- Snapshots are used for:
+  - Data Backup
+  - Disaster Recovery
+  - Volume Restoration
+  - Cross-region Migration
+
+## 🔍 Learning Outcomes
+- Learned how EBS works with EC2.
+- Created and restored EBS Snapshots.
+- Understood the difference between EBS Volumes and Snapshots.
+- Gained hands-on experience with AWS storage services.
+
+## 📸 Project Screenshot
+(Add your screenshot here)
+
+## 🏷️ Tags
+#AWS #CloudComputing #AmazonEBS #Snapshot #EC2 #CloudLearning #GitHub #100DaysOfCloud
